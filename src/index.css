@@ -1,0 +1,128 @@
+/* src/index.css */
+:root {
+  /* Color variables */
+  --color-primary: #3563E9;
+  --color-primary-dark: #2A4FBA;
+  --color-primary-light: #EEF3FF;
+  --color-secondary: #54A6FF;
+  --color-accent: #FF4D4F;
+  
+  --color-text: #1A202C;
+  --color-text-dark: #2D3748;
+  --color-text-light: #A0AEC0;
+  --color-text-lighter: #CBD5E0;
+  
+  --color-bg: #FFFFFF;
+  --color-bg-light: #F7FAFC;
+  --color-bg-dark: #1E293B;
+  
+  --color-gray-100: #F7FAFC;
+  --color-gray-200: #EDF2F7;
+  --color-gray-300: #E2E8F0;
+  --color-gray-400: #CBD5E0;
+  --color-gray-500: #A0AEC0;
+  --color-gray-600: #718096;
+  --color-gray-700: #4A5568;
+  --color-gray-800: #2D3748;
+  --color-gray-900: #1A202C;
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.05);
+  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  color: var(--color-text-dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-gray-200);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: var(--color-gray-300);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
