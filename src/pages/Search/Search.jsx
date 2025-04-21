@@ -573,7 +573,15 @@ const Search = () => {
       <div className="blue-background">
         <div className="footer-content">
           <div className="footer-grid">
-            <div className="footer-links-column animate-slideInLeft">
+            <div className="footer-column">
+              <h3>Parking Spot Finder</h3>
+              <div className="footer-description">
+                <p>Find the perfect parking spot in seconds. Easy, fast, and convenient parking solutions for everyone.</p>
+                <p className="tagline">Your ultimate parking companion for hassle-free city navigation.</p>
+              </div>
+            </div>
+
+            <div className="footer-column">
               <h3>Quick Links</h3>
               <ul>
                 <li><Link to="/">Home</Link></li>
@@ -583,18 +591,31 @@ const Search = () => {
               </ul>
             </div>
             
-            <div className="footer-links-column animate-slideInRight">
+            <div className="footer-column">
               <h3>Support</h3>
               <ul>
                 <li><Link to="/faqs">FAQs</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
               </ul>
             </div>
+
+            <div className="footer-column">
+              <h3>Connect With Us</h3>
+              <div className="footer-description">
+                <p>Follow us on social media for updates, tips, and special offers on parking spots.</p>
+              </div>
+              <div className="social-media-icons">
+                <a href="#" className="social-icon"><BsTwitter /></a>
+                <a href="#" className="social-icon"><BsFacebook /></a>
+                <a href="#" className="social-icon"><BsInstagram /></a>
+                <a href="#" className="social-icon"><BsLinkedin /></a>
+              </div>
+            </div>
           </div>
           
-          <div className="footer-bottom animate-fadeIn">
+          <div className="footer-bottom">
             <div className="copyright">
-              <p>© {new Date().getFullYear()} Parking Spot Finder. All rights reserved.</p>
+              <p>© 2025 Parking Spot Finder. All rights reserved.</p>
             </div>
           </div>
         </div>
